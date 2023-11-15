@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80px;
   }
   
   nav li {
@@ -27,7 +28,7 @@ body {
   }
   
   nav li.logo img {
-    max-height: 50px; /* Adjust as per your logo's size */
+    max-height: 50px;
   }
   
   nav a {
@@ -58,7 +59,7 @@ body {
   .slides {
     height: 100%;
     display: flex;
-    animation: slide-animation 15s infinite;
+    animation: slide-animation 40s infinite;
   }
   
   .slide {
@@ -88,12 +89,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    margin-top: 10%;
+
   }
   
-  .text-section {
-    flex-basis: 50%;
-    padding-right: 20px; /* Adjust the spacing as needed */
+  .text-section1 {
+    flex-basis: 35%;
+    padding-right: 20px;
+    width: 400px;
+    margin-right: 40px;
   }
   
   .text-section h1 {
@@ -111,14 +115,19 @@ body {
     color: #C00; /* Adjust the color as needed */
   }
   
-  .image-section1 {
-    flex-basis: 50%;
+  .image-section1{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
   }
   
   .image-section1 img {
-    width: 100%; /* This will make the image responsive */
+    width: 300px;
     height: auto;
-    display: block; /* Removes bottom space under the image */
+    display: block;
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: -1px -1px 5px 3px #d9d5d5ad;
   }
   
   .testimonial {
@@ -184,6 +193,7 @@ body {
     background-image: url('path-to-your-background-image.jpg'); /* Add your image path */
     background-size: cover;
     background-position: center;
+    margin-top: 115px;
   }
   
   .counter {
@@ -233,4 +243,46 @@ body {
     transform: scale(1.1); /* Enlarges the logo a bit when hovered */
   }
 
-  
+  /* section 3 alan css */
+  .section3{
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+  }
+   .kutu-resim {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+   }
+   .kutu {
+      background-color: #fff;
+      border: 1px solid #eeeeee;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 35px;
+      text-align: center;
+      width: 260px;
+      height: 330px;
+   }
+   .kutu-içerik{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+   }
+   .kutu:hover{
+      border: 1px solid #eeeeee;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px 5px #cbc8c8;
+   }
+   .baslik {
+      font-size: 20px;
+      color: #333;
+   }
+   .altbaslik {
+      font-size: 15px;
+      color: #666;
+   }
+  /* section 3 alan css bitiş */
